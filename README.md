@@ -12,16 +12,19 @@ This overlay contains ebuilds for packages that use the xmake build system, incl
 
 ## Installation
 
-### Using layman
-
-```bash
-layman -f -o https://raw.githubusercontent.com/xmake-io/xmake-overlay/master/repositories.xml -a xmake-overlay
-```
-
-### Using eselect-repository
+### Using eselect-repository (Recommended)
 
 ```bash
 eselect repository add xmake-overlay git https://github.com/xmake-io/xmake-overlay.git
+emerge --sync xmake-overlay
+```
+
+### Using eselect-repository with local path
+
+If you have a local clone of the repository:
+
+```bash
+eselect repository add xmake-overlay git /path/to/local/xmake-overlay
 emerge --sync xmake-overlay
 ```
 
