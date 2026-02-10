@@ -114,7 +114,7 @@ XMAKE_PROJECT_KIND="shared"
 
 ## Requirements
 
-- Gentoo Linux
+- Gentoo Linux or any derived Linux distributions or a Gentoo Prefix running on supported host OS
 - Portage package manager
 - Git (for repository synchronization)
 
